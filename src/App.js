@@ -3,8 +3,7 @@ import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import AppRouter from "./components/AppRouter.js";
 import axios from "axios";
-import LocationsList from "./components/LocationsList.js";
-import EpisodesList from "./components/EpisodesList.js";
+import SearchForm from "./components/SearchForm.js";
 
 export default function App() {
   const [characters, setCharacters] = useState("");
@@ -23,10 +22,10 @@ export default function App() {
 
   return (
     <main>
+      <SearchForm />
       <Header />
       <TabNav />
       <AppRouter />
-      <EpisodesList />
     </main>
   );
 }
