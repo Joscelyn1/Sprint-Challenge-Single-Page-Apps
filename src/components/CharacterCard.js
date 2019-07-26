@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, Card, Image } from "semantic-ui-react";
+import { List, Icon, Card, Image } from "semantic-ui-react";
 
 export default function CharacterCard(props) {
   return (
@@ -10,6 +10,10 @@ export default function CharacterCard(props) {
         <Card.Description>
           {props.species} {props.status}
         </Card.Description>
+        <List>
+          <List.Item>Location: {props.location}</List.Item>
+          <List.Item>Origin: {props.origin}</List.Item>
+        </List>
       </Card.Content>
       <Card.Content extra>
         <a>
