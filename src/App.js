@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 import AppRouter from "./components/AppRouter.js";
 import axios from "axios";
 import LocationsList from "./components/LocationsList.js";
+import EpisodesList from "./components/EpisodesList.js";
 
 export default function App() {
   const [characters, setCharacters] = useState("");
@@ -25,7 +26,7 @@ export default function App() {
       <Header />
       <TabNav />
       <AppRouter />
-      <LocationsList />
+      <EpisodesList />
     </main>
   );
 }
