@@ -11,7 +11,6 @@ export default function CharacterList() {
       .get(`https://rickandmortyapi.com/api/character`)
       .then(res => {
         // 20 characters
-        //console.log(res);
         setCharacters(res.data.results);
       })
       .catch(err => console.log(err));

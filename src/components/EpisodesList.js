@@ -16,7 +16,6 @@ export default function EpisodesList() {
       .catch(err => console.log(err));
   }, []);
   const arrayEpisodes = Array.from(episodes);
-  console.log(arrayEpisodes);
   return (
     <section className="episodes-list grid-view">
       {arrayEpisodes.map(episode => (

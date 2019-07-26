@@ -1,5 +1,5 @@
 import React from "react";
-import { List, Icon, Card, Image } from "semantic-ui-react";
+import { Icon, Card } from "semantic-ui-react";
 
 export default function LocationCard(props) {
   return (
